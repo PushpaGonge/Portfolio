@@ -375,20 +375,21 @@ nav.fa-solid{
 
 @media only screen and (max-width : 600px){
     #header{
-        background-image: url(image/pushpa-gonge.jpg);
-        background-size: 150px 200px;
-        background-position: 170px 60px;
+        background-image: url(image/backimage3.jpg);
+        background-size: 400px 400px;
+        background-position: center;
     }
 
     nav img{
-        width: 50%;
-        height:50%;
+        width: 10%;
+        height: 10%;
     }
 
     .header-text{
-        margin-top: 50%;
+        margin-top: 20%;
         font-size: 16px;
-        position: absolute;
+        position: center;
+        
     }
 
     .header-text h1{
