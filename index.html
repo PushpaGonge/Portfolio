@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Script.js"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="image/Pushpa.png" alt="Pushpa">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-sharp fa-solid fa-bars " onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front end Developer</p>
+                <h3> Hi, I'm Pushpa Gonge From India</h3>
+            </div>
+        </div>
+    </div>
+
+    <!---------------about--------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/pushpa-gonge.jpg" alt="pushpa">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sun-title">About me</h1>
+                    <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without
+                    relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Technical-skills')">Technical-skills</p>
+                        <p class="tab-links" onclick="opentab('Personal-skills')">Personal-skills</p>
+                    </div>
+                        <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li><span>SSC</span><br>From Madhyamic vidyalay, Deonandra <br>-2014 (83.60%)</li>
+                                <li><span>HSC</span><br>From Nutan Mahavidyalay, Selu <br>-2016 (60.60%)</li>
+                                <li><span>Batcholor of Engineering</span><br>From PESCOE Aurangabad <br>-2020 (6.70 CGPA)</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="Technical-skills" >
+                            <ul>
+                                <li><span>React js</span></li>
+                                <li><span>Html</span></li>
+                                <li><span>CSS</span></li>
+                                <li><span>javascript</span></li>
+                                <li><span>Python</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Personal-skills">
+                            <ul>
+                                <li><span>Team MAnagment</span></li>
+                                <li><span>Adaptability</span></li>
+                                <li><span>ready to learn new things</span></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------Certificates------------------------->
+
+    <div id="certificates">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Responsive Web Design </h2>
+                    <p>with html css -From Freecodecamp</p>
+                    <a href="image/freecodecamp.jpg">click here</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-node-js"></i>
+                    <h2>Introduction to javascript </h2>
+                    <p>From Sololearn</p>
+                    <a href="image/sololearn.jpg">Click here</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-lock"></i>
+                    <h2>Cyber Security </h2>
+                    <p>from Tata STRIVE Skill Development Centre, Pune</p>
+                    <a href="image/tatastrive.pdf">Click here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-------------------Projects------------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/shoppinf-cart.jpg" alt="shopping-cart">
+                    <div class="layer">
+                        <h3>Shopping-cart</h3>
+                        <p>this is a basic learning project in this project we  can add item frm shop to cart and can remove item from the cart also can increment or decrement same number of item no. from the cart and shop also</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+
+    <!----------------------------contact------------------------->
+
+    <div id="contact">
+        <h1 class="head">How can we connect?</h1>
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                   <h1 class="">Contact Me</h1>
+                   <p><i class="fa-solid fa-paper-plane"></i>gongepushpa9@gmail.com</p>
+                   <p><i class="fa-sharp fa-solid fa-square-phone"></i>9049395652</p>
+                   <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/pushpa-gonge-5013aa162/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                   </div>
+                   <a href="image/Resume-Pushpa Gonge-1.pdf" Download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right" >
+                    <form action="" name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Email" id="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------Script------------------->
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+            function openmenu() {
+                sidemenu.style.right = "0"
+            }
+
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyzJRz-rPwx1wX5INPZpWhaVF7B06v6fxJqNukBNSq6BkU3YX7X3E_CMwWuywuu791c/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {msg.innerHTML="Message sent successfully"
+                 setTimeout(function(){
+                    msg.innerHTML=""
+                 },5000)
+                 form.reset()
+            })
+
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+</html>
